@@ -29,7 +29,7 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 #define DESCRIPTION     t.m.k. keyboard firmware for mirrorVerse
 
 /* key matrix size */
-i/* key matrix size */
+/* key matrix size */
 #define MATRIX_ROWS 7
 #define MATRIX_COLS 15
 
