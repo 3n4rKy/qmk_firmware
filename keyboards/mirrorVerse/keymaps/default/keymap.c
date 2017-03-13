@@ -112,7 +112,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_TRNS,KC_TRNS,KC_TRNS,          KC_TRNS,               KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS), */
 };
 
-enum function_id {
+/*enum function_id {
     RGBLED_TOGGLE,
     RGBLED_STEP_MODE,
     RGBLED_INCREASE_HUE,
@@ -122,14 +122,14 @@ enum function_id {
     RGBLED_INCREASE_VAL,
     RGBLED_DECREASE_VAL,
     SHIFT_ESC,
-};
+};*/
 
 const uint16_t PROGMEM fn_actions[] = {
     [0]  = ACTION_LAYER_MOMENTARY(2),  // Momentary Fn overlay
     [1]  = ACTION_LAYER_TOGGLE(1),     // Toggle Arrow Layer overlay
     [2]  = ACTION_LAYER_TAP_KEY(2, KC_CAPS), // Tap to toggle caps lock and hold to activate function layer
     [3]  = ACTION_LAYER_TOGGLE(3),     // Toggle Underglow Layer overlay
-    [4]  = ACTION_FUNCTION(RGBLED_TOGGLE), //Turn on/off underglow
+   /* [4]  = ACTION_FUNCTION(RGBLED_TOGGLE), //Turn on/off underglow
     [5]  = ACTION_FUNCTION(RGBLED_STEP_MODE), // Change underglow mode
     [6]  = ACTION_FUNCTION(RGBLED_INCREASE_HUE),
     [7]  = ACTION_FUNCTION(RGBLED_DECREASE_HUE),
@@ -137,7 +137,7 @@ const uint16_t PROGMEM fn_actions[] = {
     [9]  = ACTION_FUNCTION(RGBLED_DECREASE_SAT),
     [10] = ACTION_FUNCTION(RGBLED_INCREASE_VAL),
     [11] = ACTION_FUNCTION(RGBLED_DECREASE_VAL),
-    [12] = ACTION_FUNCTION(SHIFT_ESC),
+    [12] = ACTION_FUNCTION(SHIFT_ESC),*/
 };
 
 const macro_t *action_get_macro(keyrecord_t *record, uint8_t id, uint8_t opt)
@@ -155,7 +155,7 @@ const macro_t *action_get_macro(keyrecord_t *record, uint8_t id, uint8_t opt)
     return MACRO_NONE;
 };
 
-void matrix_scan_user(void) {
+/*void matrix_scan_user(void) {
 
 // Layer LED indicators
 // ESC led on when in function layer, WASD cluster leds enabled when on arrow cluster
@@ -171,11 +171,11 @@ void matrix_scan_user(void) {
     } else {
         gh60_esc_led_off();
     }
-};
+};*/
 
 #define MODS_CTRL_MASK  (MOD_BIT(KC_LSHIFT)|MOD_BIT(KC_RSHIFT))
 
-void action_function(keyrecord_t *record, uint8_t id, uint8_t opt) {
+/*void action_function(keyrecord_t *record, uint8_t id, uint8_t opt) {
   switch (id) {
     case RGBLED_TOGGLE:
       //led operations
@@ -241,4 +241,4 @@ void action_function(keyrecord_t *record, uint8_t id, uint8_t opt) {
       }
       break;
     }
-};
+};*/

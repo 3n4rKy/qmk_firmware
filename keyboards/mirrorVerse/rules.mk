@@ -1,5 +1,5 @@
 # MCU name
-MCU = at90usb1286
+MCU = at90usb1268
 #MCU = atmega32u4
 
 # Processor frequency.

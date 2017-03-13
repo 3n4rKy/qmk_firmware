@@ -24,9 +24,9 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 #define VENDOR_ID    0xFEED
 #define PRODUCT_ID   0x6060
 #define DEVICE_VER   0x0001
-#define MANUFACTURER    Benji
-#define PRODUCT         mirrorVerse
-#define DESCRIPTION     t.m.k. keyboard firmware for mirrorVerse
+#define MANUFACTURER   geekhack 
+#define PRODUCT         GH60
+#define DESCRIPTION     t.m.k. keyboard firmware for GH60
 
 /* key matrix size */
 /* key matrix size */
@@ -43,7 +43,7 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
  *         ROW2COL = ROW = Anode (+), COL = Cathode (-, marked on diode)
  *
 */
- #define MATRIX_ROW_PINS { D0, D1, D2, D3, D4, D5, D6 }
+ #define MATRIX_ROW_PINS { D0, D1, D2, D3, D4, D5, D7 }
 // Rev A
 // #define MATRIX_COL_PINS { F0, F1, E6, C7, C6, B6, D4, B1, B0, B5, B4, D7, D6, B3 }
 // Rev B/C
@@ -185,8 +185,8 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 #define ws2812_pin PF4
 */ 
 #define RGB_DI_PIN C7
-#define RGBLIGHT_ANIMATIONS
-#define RGBLED_NUM 8         // Number of LEDs
+#define RGBLIGHT_ANIMATIONS 
+#define RGBLED_NUM 8         // Number of LEDs 
 #define RGBLIGHT_HUE_STEP 8
 #define RGBLIGHT_SAT_STEP 8
 #define RGBLIGHT_VAL_STEP 8
