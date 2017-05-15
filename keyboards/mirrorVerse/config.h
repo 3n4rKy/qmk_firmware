@@ -24,15 +24,16 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 #define VENDOR_ID    0xFEED
 #define PRODUCT_ID   0x6060
 #define DEVICE_VER   0x0001
-#define MANUFACTURER   geekhack 
-#define PRODUCT         GH60
-#define DESCRIPTION     t.m.k. keyboard firmware for GH60
+#define MANUFACTURER   Benji 
+#define PRODUCT         MirrorVerse
+#define DESCRIPTION     t.m.k. keyboard firmware for mV
 
 /* key matrix size */
 /* key matrix size */
 #define MATRIX_ROWS 7
 #define MATRIX_COLS 15
-
+#undef TAPPING_TOGGLE
+#define TAPPING_TOGGLE 2
 /*
  * Keyboard Matrix Assignments
  *
