@@ -150,23 +150,36 @@ const macro_t *action_get_macro(keyrecord_t *record, uint8_t id, uint8_t opt)
     return MACRO_NONE;
 };
 
-/*void matrix_scan_user(void) {
+void matrix_scan_user(void) {
 
 // Layer LED indicators
 // ESC led on when in function layer, WASD cluster leds enabled when on arrow cluster
     uint32_t layer = layer_state;
     if (layer & (1<<1)) {
-        gh60_wasd_leds_on();
+        mV_Lay1_led_on();
     } else {
-        gh60_wasd_leds_off();
+        mV_Lay1_led_off();
     }
 
     if (layer & (1<<2)) {
-        gh60_esc_led_on();
+        mV_Lay2_led_on();
     } else {
-        gh60_esc_led_off();
+        mV_Lay2_led_off();
     }
-};*/
+	
+	if (layer & (1<<3)) {
+        mV_Lay3_led_on();
+    } else {
+        mV_Lay3_led_off();
+    }
+
+    if (layer & (1<<4)) {
+        mV_Lay4_led_on();
+    } else {
+        mV_Lay4_led_off();
+    }
+	
+};
 
 #define MODS_CTRL_MASK  (MOD_BIT(KC_LSHIFT)|MOD_BIT(KC_RSHIFT))
 

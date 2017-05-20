@@ -13,8 +13,19 @@
  *   B2 Capslock LED
  *   B0 not connected
  */
-/*inline void gh60_caps_led_on(void)      { DDRB |=  (1<<2); PORTB &= ~(1<<2); }
-inline void gh60_poker_leds_on(void)    { DDRF |=  (1<<4); PORTF &= ~(1<<4); }
+inline void mV_caps_led_on(void)      { DDRB |=  (1<<0); PORTB &= ~(1<<0); }
+inline void mV_Lay1_led_on(void)      { DDRB |=  (1<<1); PORTB &= ~(1<<1); }
+inline void mV_Lay2_led_on(void)      { DDRB |=  (1<<2); PORTB &= ~(1<<2); }
+inline void mV_Lay3_led_on(void)      { DDRB |=  (1<<3); PORTB &= ~(1<<3); }
+inline void mV_Lay4_led_on(void)      { DDRB |=  (1<<4); PORTB &= ~(1<<4); }
+inline void mV_Lay5_led_on(void)      { DDRB |=  (1<<5); PORTB &= ~(1<<5); }
+inline void mV_caps_led_off(void)      { DDRB &= ~(1<<0); PORTB &= ~(1<<0); }
+inline void mV_Lay1_led_off(void)      { DDRB &= ~(1<<1); PORTB &= ~(1<<1); }
+inline void mV_Lay2_led_off(void)      { DDRB &= ~(1<<2); PORTB &= ~(1<<2); }
+inline void mV_Lay3_led_off(void)      { DDRB &= ~(1<<3); PORTB &= ~(1<<3); }
+inline void mV_Lay4_led_off(void)      { DDRB &= ~(1<<4); PORTB &= ~(1<<4); }
+inline void mV_Lay5_led_off(void)      { DDRB &= ~(1<<5); PORTB &= ~(1<<5); }
+/*inline void gh60_poker_leds_on(void)    { DDRF |=  (1<<4); PORTF &= ~(1<<4); }
 inline void gh60_fn_led_on(void)    	{ DDRF |=  (1<<5); PORTF &= ~(1<<5); }
 inline void gh60_esc_led_on(void)    	{ DDRF |=  (1<<6); PORTF &= ~(1<<6); }
 inline void gh60_wasd_leds_on(void)    	{ DDRF |=  (1<<7); PORTF &= ~(1<<7); }
